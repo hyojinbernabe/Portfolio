@@ -1,0 +1,9 @@
+<svg viewBox="-2 -6 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hyojin Bernabe - HB monogram">
+<style>
+  path { fill: #000; }
+  @media (prefers-color-scheme: dark) {
+    path { fill: #fff; }
+  }
+</style>
+<path d="M0 0h2.5v4.75h3V0H8v12H5.5V7.25h-3V12H0zM10 0h6.5a2.5 2.5 0 0 1 2.5 2.5v1.25c0 .9-.45 1.7-1.15 2.25.9.5 1.65 1.4 1.65 2.5v1A2.5 2.5 0 0 1 17 12h-7zm2.5 2.25v2.5h3.25a1.25 1.25 0 0 0 0-2.5zm0 4.75v2.75h3.75a1.375 1.375 0 0 0 0-2.75z"/>
+</svg>

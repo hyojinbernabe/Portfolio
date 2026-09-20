@@ -37,7 +37,7 @@ function buildKeys(): Key[] {
     row.forEach((k, i) => {
       const [w, label] = typeof k === "number" ? [k, undefined] : k;
       // escape, enter and the space bar get the green caps
-      const accent = false;
+      const accent = (r === 0 && i === 0) || label === "ENTER" || w === 6.25;
       keys.push({ x: x + w / 2, z: r, w, label, accent });
       x += w;
     });

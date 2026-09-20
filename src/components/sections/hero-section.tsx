@@ -52,7 +52,7 @@ export function HeroSection() {
 
         <div className="relative z-10 mt-10 flex w-full flex-col items-center gap-6 lg:flex-row lg:items-end lg:justify-between">
           <p className="hero-tagline max-w-xl text-center text-lg text-muted-foreground lg:text-left">
-            {`Full stack developer from Baguio, Philippines. I build things for the web.`}
+            {`Full stack developer from Baguio, Philippines. I build web and mobile apps in TypeScript, React, and Flutter.`}
           </p>
 
           <div className="hero-cta flex shrink-0 flex-col gap-3 sm:flex-row">

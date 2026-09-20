@@ -77,6 +77,11 @@ function Board() {
       <RoundedBox args={[15.9, 0.7, 5.9]} radius={0.3} smoothness={4} position={[0, -0.05, 0]}>
         <meshStandardMaterial color="#141414" roughness={0.55} metalness={0.3} />
       </RoundedBox>
+      {/* RGB underglow strip */}
+      <mesh position={[0, -0.42, 0]} rotation={[-Math.PI / 2, 0, 0]}>
+        <planeGeometry args={[15.4, 5.4]} />
+        <meshBasicMaterial color="#22c55e" toneMapped={false} />
+      </mesh>
       {keys.map((k, i) => (
         <RoundedBox
           key={i}
@@ -111,6 +116,7 @@ export default function KeyboardModel() {
       <ambientLight intensity={0.6} />
       <directionalLight position={[4, 10, 6]} intensity={2.2} />
       <directionalLight position={[-6, 4, -4]} intensity={0.6} color="#22c55e" />
+      <pointLight position={[0, -1.5, 3]} intensity={25} color="#22c55e" distance={12} />
       <group rotation={[0, -0.12, 0]}>
         <Board />
       </group>

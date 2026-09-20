@@ -55,7 +55,7 @@ function Board() {
   const brand = useMemo(() => new THREE.Color("#22c55e"), []);
   const dark = useMemo(() => new THREE.Color("#262626"), []);
 
-  useFrame(({ clock }) => {
+  useFrame(({ clock, pointer }) => {
     const t = (clock.elapsedTime * 1000) % LOOP_MS;
     const active = t < SEQUENCE.length * KEY_MS ? SEQUENCE[Math.floor(t / KEY_MS)] : null;
     const phase = (t % KEY_MS) / KEY_MS;
@@ -69,6 +69,11 @@ function Board() {
       if (!k.accent) mat.color.lerpColors(dark, brand, dip);
       mat.emissiveIntensity = k.accent ? 0.35 + dip : dip * 1.2;
     });
+    // gentle tilt toward the pointer
+    if (group.current) {
+      group.current.rotation.y = THREE.MathUtils.lerp(group.current.rotation.y, pointer.x * 0.12, 0.05);
+      group.current.rotation.x = THREE.MathUtils.lerp(group.current.rotation.x, -pointer.y * 0.06, 0.05);
+    }
   });
 
   return (
@@ -112,6 +117,9 @@ export default function KeyboardModel() {
       camera={{ position: [0, 6.5, 13], fov: 36 }}
       gl={{ alpha: true, antialias: true }}
       style={{ background: "transparent" }}
+      // the rig is pointer-events-none, so read the pointer from the page
+      eventSource={document.body}
+      eventPrefix="client"
     >
       <ambientLight intensity={0.6} />
       <directionalLight position={[4, 10, 6]} intensity={2.2} />

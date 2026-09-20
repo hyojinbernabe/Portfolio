@@ -25,8 +25,8 @@ const ROWS: (number | [number, string])[][] = [
 ];
 
 const SEQUENCE = ["H", "Y", "O", "J", "I", "N", "ENTER"];
-const KEY_MS = 240;
-const LOOP_MS = SEQUENCE.length * KEY_MS + 2400;
+const KEY_MS = 170;
+const LOOP_MS = SEQUENCE.length * KEY_MS + 1800;
 
 type Key = { x: number; z: number; w: number; label?: string; accent: boolean };
 

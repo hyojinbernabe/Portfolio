@@ -40,7 +40,7 @@ export function KeyboardEntrance({
       </svg>
       <div
         ref={keyboardRef}
-        className="hero-keyboard relative aspect-[2.4/1] w-[100vw] sm:w-[min(82vw,1290px)]"
+        className="hero-keyboard relative aspect-[2.4/1] w-[118vw] sm:w-[min(82vw,1290px)]"
         style={{ filter: "url(#hero-kb-blur)" }}
       >
         {children}

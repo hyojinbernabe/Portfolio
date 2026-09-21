@@ -46,7 +46,7 @@ export function HeroSection() {
           aria-label="Hyojin Bernabe"
           className="hero-word relative flex select-none flex-col items-center gap-[clamp(0.25rem,1.5vw,1.5rem)] text-center leading-[0.85] font-display tracking-tight uppercase"
         >
-          <span className="block text-[20vw] lg:text-[clamp(3.25rem,19vw,25rem)]">Hyojin</span>
+          <span className="block text-[26vw] lg:text-[clamp(3.25rem,19vw,25rem)]">Hyojin</span>
           <span className="block text-[26vw] lg:text-[clamp(3.25rem,19vw,25rem)]">Bernabe</span>
         </h1>
 

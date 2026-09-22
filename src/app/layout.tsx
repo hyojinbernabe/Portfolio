@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Anton, Archivo } from "next/font/google";
 import { LenisProvider } from "@/components/motion/lenis-provider";
-import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/site-config";
+import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/site-config";
 import "./globals.css";
 
 // Set the theme class before paint so there's no light-to-dark flash.
@@ -35,8 +35,38 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  title: SITE_NAME,
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: SITE_NAME,
+    template: `%s | ${SITE_NAME}`,
+  },
   description: SITE_DESCRIPTION,
+  keywords: [
+    "Hyojin Bernabe",
+    "full stack developer",
+    "Next.js developer",
+    "Flutter developer",
+    "remote developer Philippines",
+    "software developer portfolio",
+  ],
+  authors: [{ name: SITE_NAME, url: SITE_URL }],
+  creator: SITE_NAME,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+  },
 };
 
 

@@ -114,7 +114,7 @@ export default function KeyboardModel() {
   return (
     <Canvas
       dpr={[1, 2]}
-      camera={{ position: [0, 6.5, 13], fov: 36 }}
+      camera={{ position: [0, 5.2, 15], fov: 36 }}
       gl={{ alpha: true, antialias: true }}
       style={{ background: "transparent" }}
       // the rig is pointer-events-none, so read the pointer from the page

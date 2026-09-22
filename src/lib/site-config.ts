@@ -6,4 +6,4 @@ export const SITE_URL = "https://hyojinbernabe.vercel.app";
 export const SITE_NAME = "Hyojin Bernabe";
 
 export const SITE_DESCRIPTION =
-  "Hyojin Bernabe, full stack developer from Baguio, Philippines.";
+  "Hyojin Bernabe, full stack developer from Baguio, Philippines. Web and mobile apps in TypeScript, React, Next.js, and Flutter.";

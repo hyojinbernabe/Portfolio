@@ -160,3 +160,84 @@
     display: none; /* Chromium / WebKit */
   }
 }
+
+/*
+ * Every keyframe below sits inside its own prefers-reduced-motion check,
+ * so turning off motion in the OS turns all of them off.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1rem);
+    }
+  }
+  .animate-float {
+    animation: float 5s ease-in-out infinite;
+  }
+
+  /* Hamburger "pop" on hover. */
+  @keyframes bubble {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .hover-bubble:hover {
+    animation: bubble 0.5s ease;
+  }
+
+  @keyframes shimmer-sweep {
+    0% {
+      background-position: 10% 0;
+    }
+    50% {
+      background-position: 91% 100%;
+    }
+    100% {
+      background-position: 10% 0;
+    }
+  }
+  .shimmer-word {
+    animation: shimmer-sweep 5s ease infinite;
+  }
+
+  @supports (animation-timeline: view()) {
+    @keyframes reveal-in {
+      from {
+        opacity: 0;
+        transform: translateY(2rem);
+      }
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+    .reveal-on-view {
+      opacity: 0;
+      animation: reveal-in linear both;
+      animation-timeline: view();
+      animation-range: entry 5% cover 34%;
+    }
+  }
+}
+
+.shimmer-word {
+  background-image: linear-gradient(
+    90deg,
+    hsl(var(--foreground) / 0.5),
+    hsl(var(--foreground)),
+    hsl(var(--foreground) / 0.5)
+  );
+  background-size: 200% 200%;
+  background-clip: text;
+  color: transparent;
+}

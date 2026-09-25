@@ -18,4 +18,10 @@ export const ABOUT_CHAPTERS: AboutChapter[] = [
       "A computer science grad from the University of Baguio. I'd rather ship something small than plan something huge.",
     tags: ["Developer", "CS grad", "Baguio"],
   },
+  {
+    title: ["What", "I build"],
+    description:
+      "Web and mobile apps, front to back. Most recently a Flutter health app at ZuraLog and the website for FLH Media.",
+    tags: ["Web apps", "Mobile apps", "Dashboards"],
+  },
 ];

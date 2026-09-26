@@ -30,4 +30,10 @@ export const ABOUT_CHAPTERS: AboutChapter[] = [
       "Remote and written down. Short updates, small pull requests, and tests before I call anything done.",
     tags: ["Remote", "Async", "Tested"],
   },
+  {
+    title: ["Where", "I'm based"],
+    description:
+      "Baguio, Philippines, on UTC+8. I work remotely and can overlap with US, EU, or Australian hours.",
+    tags: ["Philippines", "UTC+8", "Remote"],
+  },
 ];

@@ -31,6 +31,11 @@ const STAGES = [
     body: "Before any code: read the brief, the existing code, and the docs. Most bugs I've avoided, I avoided here.",
     Icon: ScanSearch,
   },
+  {
+    title: "Type",
+    body: "Small commits, one change at a time, pushed often so nobody waits a week to see progress.",
+    Icon: Keyboard,
+  },
 ];
 
 // Sticker tilts, same trick as the About cards' icon badges.

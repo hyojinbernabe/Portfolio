@@ -41,6 +41,13 @@ const SKILLS: Capability[] = [
     body: "React and Next.js apps styled with Tailwind, with scroll animations in GSAP when a page needs to feel alive.",
     chips: ["React", "Next.js", "Tailwind CSS", "GSAP"],
   },
+  {
+    icon: Smartphone,
+    title: "Mobile & Desktop",
+    role: "Apps that live on a device",
+    body: "Flutter for iOS and Android, Expo when the team is on React Native, and Tauri for desktop apps.",
+    chips: ["Flutter", "Expo", "React Native", "Tauri"],
+  },
 ];
 
 const EXPERIENCE: Capability[] = [

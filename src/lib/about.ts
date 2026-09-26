@@ -24,4 +24,10 @@ export const ABOUT_CHAPTERS: AboutChapter[] = [
       "Web and mobile apps, front to back. Most recently a Flutter health app at ZuraLog and the website for FLH Media.",
     tags: ["Web apps", "Mobile apps", "Dashboards"],
   },
+  {
+    title: ["How", "I work"],
+    description:
+      "Remote and written down. Short updates, small pull requests, and tests before I call anything done.",
+    tags: ["Remote", "Async", "Tested"],
+  },
 ];

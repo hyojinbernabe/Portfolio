@@ -48,6 +48,13 @@ const SKILLS: Capability[] = [
     body: "Flutter for iOS and Android, Expo when the team is on React Native, and Tauri for desktop apps.",
     chips: ["Flutter", "Expo", "React Native", "Tauri"],
   },
+  {
+    icon: Database,
+    title: "Backend & Data",
+    role: "APIs, databases, real-time",
+    body: "Node.js APIs on PostgreSQL through Prisma, WebSockets for live updates, and Docker to run it all locally.",
+    chips: ["Node.js", "PostgreSQL", "Prisma", "WebSockets", "Docker"],
+  },
 ];
 
 const EXPERIENCE: Capability[] = [

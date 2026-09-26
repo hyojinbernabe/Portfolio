@@ -41,6 +41,11 @@ const STAGES = [
     body: "Tests for the parts that can break quietly, then clicking through it myself on a real phone or browser.",
     Icon: FlaskConical,
   },
+  {
+    title: "Ship",
+    body: "Release it, write down what changed, and keep an eye on it after. Done means people are using it.",
+    Icon: Rocket,
+  },
 ];
 
 // Sticker tilts, same trick as the About cards' icon badges.

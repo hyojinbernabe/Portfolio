@@ -65,6 +65,13 @@ const EXPERIENCE: Capability[] = [
     body: "Built features for a Flutter health app on iOS and Android: the AI chat that streams replies over WebSockets, social sign-in, and push notifications.",
     chips: ["Flutter", "Riverpod", "Firebase", "WebSockets"],
   },
+  {
+    icon: Globe,
+    title: "FLH Media",
+    role: "Full Stack Developer · Jul to Sep 2026",
+    body: "Built the agency's website in Next.js with GSAP scroll animations and a contact form that emails inquiries, deployed on Vercel.",
+    chips: ["Next.js", "Tailwind CSS", "GSAP", "Vercel"],
+  },
 ];
 
 function RevealCard({ item, accent }: { item: Capability; accent: boolean }) {

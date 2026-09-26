@@ -34,6 +34,13 @@ const SKILLS: Capability[] = [
     body: "TypeScript for almost everything on the web, Dart for Flutter, and PHP or Python when a project calls for it.",
     chips: ["TypeScript", "JavaScript", "Dart", "PHP", "Python"],
   },
+  {
+    icon: LayoutTemplate,
+    title: "Frontend",
+    role: "Interfaces and motion",
+    body: "React and Next.js apps styled with Tailwind, with scroll animations in GSAP when a page needs to feel alive.",
+    chips: ["React", "Next.js", "Tailwind CSS", "GSAP"],
+  },
 ];
 
 const EXPERIENCE: Capability[] = [

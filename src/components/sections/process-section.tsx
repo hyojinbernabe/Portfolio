@@ -36,6 +36,11 @@ const STAGES = [
     body: "Small commits, one change at a time, pushed often so nobody waits a week to see progress.",
     Icon: Keyboard,
   },
+  {
+    title: "Test",
+    body: "Tests for the parts that can break quietly, then clicking through it myself on a real phone or browser.",
+    Icon: FlaskConical,
+  },
 ];
 
 // Sticker tilts, same trick as the About cards' icon badges.

@@ -14,4 +14,5 @@ const project = (title: string, slug: string, alt: string): Project => ({
 
 export const PROJECTS: Project[] = [
   project("Globit Transient", "globit", "Globit Transient booking site"),
+  project("Mini Redis", "mini-redis", "Mini Redis server answering redis-cli"),
 ];

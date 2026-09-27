@@ -6,6 +6,7 @@ import {
   ExperienceSection,
 } from "@/components/sections/capability-sections";
 import { MarqueeBand } from "@/components/sections/marquee-band";
+import { ProjectsShowcase } from "@/components/sections/projects-showcase";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <SkillsSection />
       <ExperienceSection />
       <MarqueeBand />
+      <ProjectsShowcase />
     </>
   );
 }

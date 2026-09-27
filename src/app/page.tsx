@@ -5,6 +5,7 @@ import {
   SkillsSection,
   ExperienceSection,
 } from "@/components/sections/capability-sections";
+import { MarqueeBand } from "@/components/sections/marquee-band";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ProcessSection />
       <SkillsSection />
       <ExperienceSection />
+      <MarqueeBand />
     </>
   );
 }

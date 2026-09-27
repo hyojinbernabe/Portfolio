@@ -15,7 +15,7 @@ const COPIES = 4; // enough that the row always overflows both edges
 const SPEED = 0.4; // px of marquee travel per px of page scroll
 const AUTOPLAY = 40; // px/s of ambient drift when the page is still
 
-export function MarqueeBand({ label = "Hyojin" }: { label?: string }) {
+export function MarqueeBand({ label = "Hyojin Bernabe" }: { label?: string }) {
   const trackRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

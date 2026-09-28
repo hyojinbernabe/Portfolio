@@ -17,4 +17,5 @@ export const PROJECTS: Project[] = [
   project("Mini Redis", "mini-redis", "Mini Redis server answering redis-cli"),
   project("Collab Board", "collab-board", "Realtime collaborative board"),
   project("Repo Docs Chat", "repo-docs-chat", "Chat that answers questions about a repo's docs"),
+  project("Phantom", "phantom", "Phantom desktop dashboard"),
 ];

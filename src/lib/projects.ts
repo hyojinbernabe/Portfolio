@@ -19,4 +19,5 @@ export const PROJECTS: Project[] = [
   project("Repo Docs Chat", "repo-docs-chat", "Chat that answers questions about a repo's docs"),
   project("Phantom", "phantom", "Phantom desktop dashboard"),
   project("Hati", "hati", "Hati expense splitter app"),
+  project("Job Highlighter", "job-highlighter", "Chrome extension highlighting job post skills"),
 ];

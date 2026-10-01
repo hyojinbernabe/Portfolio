@@ -21,4 +21,5 @@ export const PROJECTS: Project[] = [
   project("Hati", "hati", "Hati expense splitter app"),
   project("Job Highlighter", "job-highlighter", "Chrome extension highlighting job post skills"),
   project("Clinic Records", "clinic-records", "University clinic records system"),
+  project("E-commerce Store", "ecommerce", "Laravel online store"),
 ];

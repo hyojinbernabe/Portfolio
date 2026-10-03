@@ -659,7 +659,7 @@ export function PitchSection() {
             </div>
             <span className={cn(mask, "mt-10 sm:mt-20")}>
               <p data-roll-b className={body}>
-                Fast isn't enough if it feels clunky. I keep adjusting the
+                Fast isn&apos;t enough if it feels clunky. I keep adjusting the
                 small interactions until clicking around is actually
                 fun.
               </p>

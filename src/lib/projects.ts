@@ -22,4 +22,5 @@ export const PROJECTS: Project[] = [
   project("Job Highlighter", "job-highlighter", "Chrome extension highlighting job post skills"),
   project("Clinic Records", "clinic-records", "University clinic records system"),
   project("E-commerce Store", "ecommerce", "Laravel online store"),
+  project("Freelance Market", "freelance-market", "Freelance marketplace design in Figma"),
 ];

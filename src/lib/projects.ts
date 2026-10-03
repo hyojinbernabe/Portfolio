@@ -24,4 +24,5 @@ export const PROJECTS: Project[] = [
   project("E-commerce Store", "ecommerce", "Laravel online store"),
   project("Freelance Market", "freelance-market", "Freelance marketplace design in Figma"),
   project("Retail Inventory", "retail-inventory", "Retail inventory system design"),
+  project("CSV Cleanup", "csv-cleanup", "Python CSV cleanup scripts"),
 ];

@@ -8,6 +8,7 @@ export const SECTIONS: NavSection[] = [
   { id: "process", label: "Process" },
   { id: "skills", label: "Skills" },
   { id: "experience", label: "Experience" },
+  { id: "work", label: "Projects" },
 ];
 
 // Email link for the social rail / menu.

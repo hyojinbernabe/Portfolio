@@ -20,6 +20,8 @@ export default function Home() {
       <MarqueeBand />
       <ProjectsShowcase />
       <PitchSection />
+      {/* second band right above the footer (footer lives in the layout) */}
+      <MarqueeBand />
     </>
   );
 }

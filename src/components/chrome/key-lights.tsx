@@ -111,7 +111,7 @@ export function KeyLights() {
               .to(caps[i], { y: 6, duration: 0.07, ease: "power2.in" })
               .to(caps[i], { y: 0, duration: 0.3, ease: "back.out(3)" });
             gsap.to(glows[i], { opacity: 1, duration: 0.12 });
-            await wait(450);
+            await wait(330);
             if (cancelled) return;
           }
 

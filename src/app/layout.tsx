@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Anton, Archivo } from "next/font/google";
 import { LenisProvider } from "@/components/motion/lenis-provider";
+import { AppBars } from "@/components/chrome/app-bars";
+import { KeyLights } from "@/components/chrome/key-lights";
+import { SiteFooter } from "@/components/sections/site-footer";
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/site-config";
 import "./globals.css";
 
@@ -89,8 +92,11 @@ export default function RootLayout({
           hidden) adds no scroll container, so vertical flow is untouched. */}
       <body className="flex min-h-full flex-col overflow-x-clip">
         <LenisProvider>
+          <KeyLights />
+          <AppBars />
           <div className="flex flex-1 flex-col pt-16 lg:px-[125px] lg:pt-0">
             {children}
+            <SiteFooter />
           </div>
         </LenisProvider>
       </body>

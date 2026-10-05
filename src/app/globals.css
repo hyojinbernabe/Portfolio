@@ -62,7 +62,7 @@
   --ring: oklch(0.74 0.19 150);
   /* Brighter cut of the same green for near-black. */
   --brand: oklch(0.74 0.19 150);
-  --brand-foreground: oklch(1 0 0);
+  --brand-foreground: oklch(0.145 0 0);
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);

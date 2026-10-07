@@ -4,6 +4,7 @@ import { LenisProvider } from "@/components/motion/lenis-provider";
 import { AppBars } from "@/components/chrome/app-bars";
 import { KeyLights } from "@/components/chrome/key-lights";
 import { SiteFooter } from "@/components/sections/site-footer";
+import { BRAND_ICONS } from "@/lib/social-icons";
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/site-config";
 import "./globals.css";
 
@@ -72,6 +73,16 @@ export const metadata: Metadata = {
   },
 };
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: SITE_NAME,
+  url: SITE_URL,
+  jobTitle: "Full Stack Developer",
+  description: SITE_DESCRIPTION,
+  image: `${SITE_URL}/hyojin-bernabe-logo.png`,
+  sameAs: BRAND_ICONS.map((icon) => icon.href),
+};
 
 export default function RootLayout({
   children,
@@ -86,6 +97,12 @@ export default function RootLayout({
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
       </head>
       {/* overflow-x-clip: wide decorative layers (hero splatter, marquee
           copies) can never create a horizontal scrollbar; clip (unlike

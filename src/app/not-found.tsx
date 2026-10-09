@@ -5,7 +5,7 @@ export default function NotFound() {
     <div className="flex flex-1 flex-col items-center justify-center px-6 py-32 text-center">
       <p className="text-[15px] tracking-[0.03em] uppercase">404</p>
       <h1 className="mt-4 font-display text-[clamp(3rem,10vw,7rem)] leading-[0.85] uppercase">
-        Page not found
+        Missed a key
       </h1>
       <p className="mt-6 max-w-md text-lg text-muted-foreground">
         This page doesn&apos;t exist. It might have moved, or the link has a typo.

@@ -75,7 +75,7 @@ const EXPERIENCE: Capability[] = [
   {
     icon: GraduationCap,
     title: "Money Trees",
-    role: "Full Stack Intern · Feb to Apr 2025",
+    role: "Full Stack Intern · Feb to Apr 2026",
     body: "Made the user onboarding for a Bible study app in Expo inside a monorepo, redesigned web dashboards, and shipped production hotfixes. Fully remote.",
     chips: ["Expo", "React", "Monorepo"],
   },

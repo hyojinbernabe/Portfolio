@@ -12,4 +12,4 @@ export const SECTIONS: NavSection[] = [
 ];
 
 // Email link for the social rail / menu.
-export const EMAIL_HREF = "mailto:20213278@s.ubaguio.edu";
+export const EMAIL_HREF = "mailto:hyojinbernabe7@gmail.com";

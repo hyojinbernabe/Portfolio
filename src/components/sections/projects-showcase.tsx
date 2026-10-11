@@ -110,7 +110,7 @@ function ProjectRow({ project }: { project: Project }) {
   return (
     <div
       ref={rowRef}
-      tabIndex={0}
+      tabIndex={project.href ? undefined : 0}
       onMouseEnter={open}
       onMouseLeave={close}
       onFocus={open}
@@ -126,6 +126,17 @@ function ProjectRow({ project }: { project: Project }) {
           {project.title}
         </span>
       </span>
+
+      {/* Stretched link over the whole row, above the preview panel. */}
+      {project.href && (
+        <a
+          href={project.href}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`${project.title} on GitHub`}
+          className="absolute inset-0 z-20"
+        />
+      )}
 
       {/* Preview centered behind an overflow-hidden window matching the row:
           the row-height tween reveals the image center-out and swallows the
